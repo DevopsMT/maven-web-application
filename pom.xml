@@ -106,7 +106,7 @@
 	    </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>snpshot</name>
+	      <name>snapshot</name>
 	      <url>http://ec2-13-233-166-117.ap-south-1.compute.amazonaws.com:8081/repository/myntra-snapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement>
