@@ -107,7 +107,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>snapshot</name>
-	      <url>http://ec2-52-66-198-8.ap-south-1.compute.amazonaws.com:8081/repository/maven-snapshots/</url>
+	      <url>http://ec2-52-66-198-8.ap-south-1.compute.amazonaws.com:8081/repository/myntra-snapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	<build>
