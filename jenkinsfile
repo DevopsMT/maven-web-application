@@ -1,1 +1,37 @@
+#! groovy
+node{
+
+   stage('checkout'){
+    git credentialsId: 'b5870b31-115f-47a9-b11d-5ca1d9ab938a', url: 'https://github.com/DevopsMT/maven-web-application.git'
+   }
+ 
+   stage('install')
+
+    {
+
+      def mvn_version = 'maven'
+
+       withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] )
+
+          {         
+		  sh 'mvn clean install'
+
+          }   
+	}
+
+   stage('sonar')
+
+    {
+
+      def mvn_version = 'maven'
+
+       withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] )
+
+          {         
+		  sh 'mvn sonar:sonar '
+
+          }   
+     }
+
+  }
 
