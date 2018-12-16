@@ -102,12 +102,12 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://ec2-52-66-198-8.ap-south-1.compute.amazonaws.com:8081/repository/myntra-release/</url>
+	      <url>http://ec2-13-233-212-126.ap-south-1.compute.amazonaws.com:8081/repository/flipkart-release/</url>
 	    </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>snapshot</name>
-	      <url>http://ec2-52-66-198-8.ap-south-1.compute.amazonaws.com:8081/repository/myntra-snapshot/</url>
+	      <url>http://ec2-13-233-212-126.ap-south-1.compute.amazonaws.com:8081/repository/flipkart-release/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	<build>
