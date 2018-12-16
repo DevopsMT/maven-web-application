@@ -19,7 +19,7 @@ node{
           }   
 	}
 
-   stage('sonar')
+   /* stage('sonar')
 
     {
 
@@ -31,7 +31,7 @@ node{
 		  sh 'mvn sonar:sonar '
 
           }   
-     }
+     }*/
 
   }
 
