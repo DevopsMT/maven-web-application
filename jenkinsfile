@@ -9,7 +9,7 @@ node{
 
     {
 
-      def mvn_version = 'maven'
+      def mvn_version = 'maven-3.6.0'
 
        withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] )
 
@@ -18,7 +18,20 @@ node{
 
           }   
 	}
+   
+   stage('deploy')
 
+    {
+
+      def mvn_version = 'maven-3.6.0'
+
+       withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] )
+
+          {         
+	  sh 'mvn clean deploy'
+           }   
+	} 
+	
    /* stage('sonar')
 
     {
